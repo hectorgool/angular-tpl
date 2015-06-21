@@ -4,7 +4,11 @@
 
   var app, dependencies;
 
-  dependencies = ['ngResource', 'ngRoute','myApp.services','myApp.controllers'];
+  dependencies = [
+    'ngResource', 'ngRoute','myApp.services','myApp.controllers',
+    'form.controllers'
+  ];
+
   app = angular.module('myApp', dependencies);
   
   app.config( function( $routeProvider ){   
@@ -15,9 +19,9 @@
     });   
 
 
-    $routeProvider.when('/signup', {
-      templateUrl: 'partials/view2.html'//,
-      //controller: 'PostCtrl'
+    $routeProvider.when('/formulario', {
+      templateUrl: 'partials/view2.html',
+      controller: 'FormCtrl'
     });
     
 
