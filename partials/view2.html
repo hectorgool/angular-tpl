@@ -5,7 +5,7 @@
         Formulario
     </h2>
 
-    <form novalidate name="appForm">
+    <form novalidate name="appForm" ng-submit="appForm.$valid && add()">
 
 
     	<div class="form-group" 	
@@ -88,6 +88,9 @@
 	        <pre>
 	        	{{ data | json }}
 	        </pre>
+	        <pre>
+	        	form: {{ appForm.$valid }}
+	        </pre>	
     	</p>
 
     </form>

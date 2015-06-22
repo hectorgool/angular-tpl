@@ -10,11 +10,9 @@
 
       $scope.data = {}
 
-      /*
-      $scope.$watch('myform.nombres.$invalid', function(newval) {
-        $scope.isInvalid = newval;
-      });
-      */
+      $scope.add = function() {
+        console.log('data: ' + JSON.stringify($scope.data) );
+      };
       
     }
   ]);
